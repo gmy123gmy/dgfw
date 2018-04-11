@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/header.css">
+    <title>道格法务平台</title>
+    <style>
+        body{margin:0;padding:0;font-family: "微软雅黑"}
+        .container{width:100%;height:100%;margin:45px auto 0;}
+        .colum,.lists{margin:0;padding:0;list-style: none;height:100%;background:#eee;width:30%;float:left;height:736px}
+        .lists{background:#fff;width:70%}
+        .colum{text-align: center;font-size:18px;}
+        .colum li{width:100%;height:60px;line-height:60px;}
+        .active{background:#fff;color:#f00}
+        .lists li{width:100%;height:50px;line-height:50px;border-bottom: 1px solid #eee;box-sizing: border-box;padding:0 20px;font-size:16px;}
+        .lists i{float:right;font-size:24px;margin-top:11px;color:#eee}
+        a,a:hover{color:#000;text-decoration: none;}
+    </style>
+</head>
+<body>
+    
+    <div class="head">
+        <a href="javascript:;" onclick="javascript :history.back(-1);" class="fa fa-angle-left"></a>
+        <span>道格法务平台</span>
+    </div>
+    
+    <div class="container">
+        <ul class="colum">
+            <li class="active">法律咨询</li>
+            <li>法律文书</li>
+        </ul>
+        <ul class="lists">
+            <a href="marry.html">
+                <li>婚姻<i class="fa fa-angle-right"></i></li>
+            </a>
+            <a href="">
+                <li>继承<i class="fa fa-angle-right"></i></li>
+            </a>
+            <a href="">
+                <li>工伤<i class="fa fa-angle-right"></i></li>
+            </a>
+            <a href="">
+                <li>劳动合同<i class="fa fa-angle-right"></i></li>
+            </a>
+            <a href="">
+                <li>交通事故<i class="fa fa-angle-right"></i></li>
+            </a>
+            <a href="">
+                <li>治安处罚<i class="fa fa-angle-right"></i></li>
+            </a>
+            <a href="">
+                <li>刑事犯罪<i class="fa fa-angle-right"></i></li>
+            </a>
+            <a href="">
+                <li>合同纠纷<i class="fa fa-angle-right"></i></li>
+            </a>
+            <a href="">
+                <li>债务纠纷<i class="fa fa-angle-right"></i></li>
+            </a>
+        </ul>
+        <ul class="lists">
+                <a href="">
+                    <li>代写文书<i class="fa fa-angle-right"></i></li>
+                </a>
+                <a href="">
+                    <li>模板下载<i class="fa fa-angle-right"></i></li>
+                </a>
+                
+            </ul>
+    </div>
+   
+    
+<script src="js/jquery.min.js"></script>  
+<script>
+    $(".lists").not(":first").hide(); 
+    $('.colum li').click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        var index = $('.colum li').index(this);
+        $(".lists").eq(index).show().siblings('.lists').hide();
+    })
+   
+</script>  
+</body>
+</html>

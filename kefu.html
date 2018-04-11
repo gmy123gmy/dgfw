@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+    <link rel="stylesheet" href="css/font-awesome.css">    
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/talk.css">
+    <title>道格法务平台</title>
+
+</head>
+<body  onload="loaded()">
+        <div id="header">
+            <a href="javascript:;" onclick="javascript :history.back(-1);" class="fa fa-angle-left"></a>
+            <span>道格法务平台</span>
+        </div>
+        <div id="wrapper">
+            <div id="scroller" >
+                <!-- Left -->
+                <div class="sender">
+                    <div>
+                        <img src="img/4.jpg">
+                    </div>
+                    <p>4-20 12:30</p>
+                    <div>
+                        <div class="left_triangle"></div>
+                        <span> 你好，可以认识一下吗？</span>
+                    </div>
+                </div>
+                <!-- Right -->
+                <div class="receiver">
+                    <div>
+                        <img src="img/4.jpg">
+                    </div>
+                    <p>4-20 12:30</p>
+                    <div>
+                        <div class="right_triangle"></div>
+                        <span>蜀黍，我觉得你和我父亲比较熟悉可以联系他。</span>
+                    </div>
+                </div>  
+                <!-- Left -->
+                <div class="sender">
+                    <div>
+                        <img src="img/4.jpg">
+                    </div>
+                    <p>4-20 12:30</p>
+                    <div>
+                        <div class="left_triangle"></div>
+                        <span> 是他让我加你的。。。 </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <form action="" >
+                <input type="text" placeholder="仅限文字留言">
+                <input type="submit" class="send" value="发送"></button>
+            </form>
+        </div>
+<script src="js/iscroll.js"></script>
+<script type="text/javascript">
+        var myScroll;
+        function loaded () {
+            myScroll = new IScroll('#wrapper', { mouseWheel:true,click:true});
+        }
+        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+</script>
+</body>
+</html>

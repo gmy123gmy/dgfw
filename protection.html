@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>道格法务平台</title>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/header.css">
+    <style>
+        body{margin:0;padding:0;font-family: "微软雅黑";}
+        form{width:90%;margin:70px auto 0;font-size:16px}
+        input,select{width:100%;height:35px;line-height:35px;border-radius: 5px;border:1px solid #eee;padding-left:5px;box-sizing: border-box;}
+        textarea{border:1px solid #eee;border-radius: 5px;}
+        table{width:100%;}
+        table tr td:first-child{width:40%;text-align:right;}
+        table tr td:last-child{width:60%;}
+        table tr{height:50px;}
+        .law .short{width:45%;box-sizing: border-box;margin:5px 0 10px;}
+        .law .short:first-child{margin-right:7%;}
+        .long{margin-bottom:15px}
+        @media screen and (max-width: 330px){
+            table tr td:first-child div{width:80px;}
+            table tr td:last-child{width:180px;}
+            form{font-size:14px;}
+            input,select{width:180px;}
+            .law .short{width:80px;box-sizing: border-box;margin:5px 0 10px;}
+            .law .short:first-child{margin-right:16px;}
+            textarea{width:178px;}
+        }
+        .sub{background:#f00;color:#fff;width:60%;display:block;margin:20px auto;}
+        a{text-decoration: none}
+    </style>
+</head>
+<body>
+    <div class="head">
+        <a href="javascript:;" onclick="javascript :history.back(-1);" class="fa fa-angle-left"></a>
+        <span>债权保全</span>
+    </div>
+    <form action="upload.html">
+        <table>
+            <tr>
+                <td><div>姓名/名称：</div></td>
+                <td><input type="text" placeholder="请输入联系人姓名/企业名称" ></td>
+            </tr>
+            <tr>
+                <td>手机号：</td>
+                <td><input type="text" placeholder="请输入手机号" class="tel" onblur="validatemobile()"></td>
+            </tr>
+            <tr>
+                <td>诉请金额：</td>
+                <td><input type="text" placeholder="请输入诉请金额"></td>
+            </tr>
+            <tr>
+                <td>案由：</td>
+                <td>
+                    <select name="" id="">
+                        <option value="">建筑工程</option>
+                        <option value="">民间借贷</option>
+                        <option value="">合同纠纷</option>
+                        <option value="">其他</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" style="padding-top:12px">管辖法院：</td>
+                <td class="law">
+                    <select name="" id="" class="short">
+                        <option value="">选择省份</option>
+                        <option value="">陕西省</option>
+                        <option value="">山西省</option>
+                        <option value="">四川省</option>
+                    </select>
+                    <select name="" id="" class="short">
+                        <option value="">选择市</option>
+                        <option value="">西安市</option>
+                        <option value="">宝鸡市</option>
+                        <option value="">其他</option>
+                    </select>
+                    <select name="" id="" class="long">
+                        <option value="">选择管辖法院</option>
+                        <option value="">陕西省高级人民法院</option>
+                        <option value="">西安市中级人民法院</option>
+                        <option value="">西安市雁塔区人民法院</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top">案件描述：</td>
+                <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+            </tr>
+        </table>
+        <input type="submit" value="提交" class="sub">
+    </form>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+       var mobile = document.getElementsByClassName('tel').value;
+       var length = mobile.length;
+        function validatemobile(mobile)
+        {
+        if(length==0)
+        {
+        alert('手机号码不能为空！');
+        return false;
+        }
+        if(length!=11)
+        {
+        alert('请输入有效的手机号码，需是11位！');
+        return false;
+        }
+        
+        var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+        if(!myreg.test(mobile))
+        {
+        alert('请输入有效的手机号码！');
+        return false;
+        }
+        }
+        </script>
+</body>
+</html>

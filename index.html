@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <title>道格法务平台</title>
+    <style>
+        body{margin:0;padding:0;font-family: "微软雅黑"}
+        .container{width:100%;height:168px;border-bottom:1px solid #eee}
+        .flexslider{margin-top:45px;}
+        .flexslider,.slides,.flexslider .slides li{width:100%;height:200px;position:relative}
+        .bott{width:100%;height:32px;line-height:32px;color:#fff;font-size:14px;background: rgba(0,0,0,.5);position:absolute;bottom:0;text-align: center}
+        .flex-control-nav{bottom:32px;}
+        .kinds{width:90%;margin:30px auto;height:168px;display: flex;justify-content: space-between;flex-wrap: wrap;text-align: center;}
+        .kinds a{color:#000;text-decoration: none}
+        .kinds .item{width:17%;height:68px;font-size:14px;}
+        .item .fa{font-size:28px;color:#f00}
+        .item p{margin-top:10px;}
+        .lawyer,.video{width:100%;height:40px;line-height:40px;border-left: 4px solid #f00;border-bottom: 1px solid #eee;padding:0 5%;box-sizing: border-box;}
+        .video{border-top:1px solid #eee}
+        .all_lawyer{float:right;font-size:14px;color: #999}
+        .scrollleft{width:100%;padding:5px 20px 0px 20px;margin:20px auto;overflow: hidden;box-sizing: border-box}
+        .scrollleft li{float:left;margin-right:30px;display:inline;width:100px;text-align:center;line-height:19px}
+        .scrollleft li span{display:inline-block;color:#000;font-size: 14px;padding:5px 0;}
+        .scrollleft img{width:100px;height:140px;border:solid 1px #ddd;background:#fff}
+        .area{width: 90%;margin:30px auto;padding-bottom:50px;}
+        .area a{color:#000}
+        .area .left{width:46%;margin-right:8%;float:left;}
+        .area img{width:100%;height:100px;}
+        .area p{margin-top:6px;text-align: center;font-size:14px;}
+        .area span{color:#f00;font-size:12px;}
+        .area .right{width:46%;float:left;}
+        .bottom{width:100%;height:45px;line-height:45px;position:fixed;bottom:0;background: #f00;color:#fff;text-align: center}
+        .bottom div{float:left;width:50%;}
+        .advantage{border-right:1px solid #fff;box-sizing: border-box}
+        .bottom a{color:#fff}
+        .kefu{position:absolute;bottom:34px;right:10px;text-align: center;font-size:20px;color: #f00}
+        .kefu p{margin-top:0px;font-size:12px;}
+        a{color:#f00;text-decoration: none}
+    </style>
+</head>
+<body>
+    
+    <div class="head">
+        <span>道格法务平台</span>
+    </div>
+    <!-- 轮播 -->
+    <div class="flexslider">
+        <ul class="slides">
+            <li style="background: url(img/1.jpg)  no-repeat;background-size:cover"><a href="#"  title="" ></a>
+            <div class="bott">XX律师事务所入驻</div>
+            </li>
+            <li style="background: url(img/2.jpg) no-repeat;background-size:cover"><a href="#"  title="" ></a>
+                <div class="bott">律师事务所入驻</div>
+            </li>
+            <li style="background: url(img/3.jpg) no-repeat;background-size:cover"><a href="#"  title="" ></a>
+            </li>
+           
+        </ul>
+    </div>
+    
+    <div class="container">
+        <div class="kinds">
+            <div class="item">
+                <a href="legal.html">
+                <i class="fa fa-balance-scale"></i>
+                <p>法律咨询</p> 
+                </a>
+            </div>
+            <div class="item">
+                <a href="claims.html">
+                <i class="fa fa-users"></i>
+                <p>诉讼服务</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="qiyefw.html">
+                <i class="fa fa-legal"></i>
+                <p>企业法务</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="company.html">
+                <i class="fa fa-building-o"></i>
+                <p>公司上市</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="guquansimu.html">
+                <i class="fa fa-bank"></i>
+                <p>股权私募</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="recommend.html">
+                <i class="fa fa-file-text-o"></i>
+                <p>案源推荐</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="protection.html">
+                <i class="fa fa-briefcase"></i>
+                <p>债权保全</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                <i class="fa fa-dollar"></i>
+                <p>金融服务</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="knowledge.html">
+                <i class="fa fa-book"></i>
+                <p>知识产权</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="more_server.html">
+                <i class="fa fa-align-justify"></i>
+                <p>更多服务</p>
+                </a>
+            </div>
+               
+        </div> 
+    </div>
+    <div class="lawyer">
+        <span>推荐律师</span>
+        <a href="lawyers.html"><span class="all_lawyer">查看全部</span></a>
+    </div>
+    <div class="scrollleft">
+        <ul>
+            <li>
+                <a href="lawyer_intro.html"><img  alt="" src="img/1.jpg"/></a>
+                <span>XX律师</span>
+            </li>
+            <li>
+                <a href="lawyer_intro.html"><img  alt="" src="img/2.jpg"/></a>
+                <span>XX律师</span>
+            </li>
+            <li>
+                <a href="lawyer_intro.html"><img  alt="" src="img/3.jpg"/></a>
+                <span>XX律师</span>
+            </li>
+        </ul>
+    </div>
+    <div class="video">
+        <span>视频精选</span>
+        <a href="videos.html"><span class="all_lawyer">全部视频</span></a>
+    </div>
+    <div class="area">
+        <a href="video_info.html"><div class="left">
+            <img src="img/1.jpg" alt="">
+            <p>婚姻法相关视频 <span>￥99</span></p>
+        </div></a>
+        <div class="right">
+            <img src="img/1.jpg" alt="">
+            <p>婚姻法相关视频 <span>￥99</span></p>
+        </div>
+        <div class="left">
+            <img src="img/1.jpg" alt="">
+            <p>婚姻法相关视频 <span>￥99</span></p>
+        </div>
+        <div class="right">
+            <img src="img/1.jpg" alt="">
+            <p>婚姻法相关视频 <span>￥99</span></p>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+   <div style="position:fixed;bottom:0px;width:100%;height:30px;">
+        <a href="kefu.html"><div class="kefu">
+            <i class="fa fa-comment fa-flip-horizontal"></i>
+            <p>客服</p></a>
+        </div>
+   </div>
+    <div class="bottom">
+        <a href="advantage.html"><div class="advantage">平台优势</div></a>
+        <a href="my.html"><div>个人中心</div></a>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script>
+        $(function(){
+            $(".flexslider").flexslider({
+                slideshowSpeed: 4000, 
+                animationSpeed: 1000, 
+                touch: true ,
+                directionNav: false,
+                pauseOnAction: false
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        //图片滚动 调用方法 imgscroll({speed: 30,amount: 1,dir: "up"});
+      $.fn.imgscroll = function(o){
+          var defaults = {
+              speed: 100,
+              amount: 0,
+              width: 1,
+              dir: "left"
+          };
+          o = $.extend(defaults, o);
+          
+          return this.each(function(){
+              var _li = $("li", this);
+              _li.parent().parent().css({overflow: "hidden", position: "relative"}); //div
+              _li.parent().css({margin: "0", padding: "0", overflow: "hidden", position: "relative", "list-style": "none"}); //ul
+              _li.css({position: "relative", overflow: "hidden"}); //li
+              if(o.dir == "left") _li.css({float: "left"});
+              
+              //初始大小
+              var _li_size = 0;
+              for(var i=0; i<_li.size(); i++)
+                  _li_size += o.dir == "left" ? _li.eq(i).outerWidth(true) : _li.eq(i).outerHeight(true);
+              
+              //循环所需要的元素
+              if(o.dir == "left") _li.parent().css({width: (_li_size*3)+"px"});
+              _li.parent().empty().append(_li.clone()).append(_li.clone()).append(_li.clone());
+              _li = $("li", this);
+      
+              //滚动
+              var _li_scroll = 0;
+              function goto(){
+                  _li_scroll += o.width;
+                  if(_li_scroll > _li_size)
+                  {
+                      _li_scroll = 0;
+                      _li.parent().css(o.dir == "left" ? { left : -_li_scroll } : { top : -_li_scroll });
+                      _li_scroll += o.width;
+                  }
+                      _li.parent().animate(o.dir == "left" ? { left : -_li_scroll } : { top : -_li_scroll }, o.amount);
+              }
+              
+              //开始
+              var move = setInterval(function(){ goto(); }, o.speed);
+              _li.parent().hover(function(){
+                  clearInterval(move);
+              },function(){
+                  clearInterval(move);
+                  move = setInterval(function(){ goto(); }, o.speed);
+              });
+          });
+      };
+      </script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+        
+            $(".scrollleft").imgscroll({
+                speed: 80,    //图片滚动速度
+                amount: 0,    //图片滚动过渡时间
+                width: 1,     //图片滚动步数
+                dir: "left"   // "left" 或 "up" 向左或向上滚动
+            });
+            
+            
+        });
+        </script> 
+</body>
+</html>
